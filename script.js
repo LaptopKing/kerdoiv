@@ -1,5 +1,9 @@
+function get_ev_v() {
+	document.getElementById("ev").value = document.getElementById("ev_v").value;
+}
+
 function get_ev() {
-	document.getElementById("ev_v").innerHTML = document.getElementById("ev").value;
+	document.getElementById("ev_v").value = document.getElementById("ev").value;
 }
 
 function ellenoriz() {
@@ -15,44 +19,44 @@ function ellenoriz() {
 
 	if (nev1 == "Romolus" && nev2 == "Remus")
 	{
-		document.getElementById("1").style.backgroundColor = "green";
+		document.getElementById("1").className = "col-sm-12 pb-5 bg-success";
 	}
 	else {
-		document.getElementById("1").style.backgroundColor = "red";
+		document.getElementById("1").className = "col-sm-12 pb-5 bg-danger";
 	}
 	switch(true) {
 		case r1:
-			document.getElementById("2").style.backgroundColor = "red";
+			document.getElementById("2").className = "col-sm-12 pb-5 bg-danger";
 			break;
 		case r2:
-			document.getElementById("2").style.backgroundColor = "red";
+			document.getElementById("2").className = "col-sm-12 pb-5 bg-danger";
 			break;
 		case r3:
-			document.getElementById("2").style.backgroundColor = "green";
+			document.getElementById("2").className = "col-sm-12 pb-5 bg-success";
 			break;
 		case r4:
-			document.getElementById("2").style.backgroundColor = "red";
+			document.getElementById("2").className = "col-sm-12 pb-5 bg-danger";
 			break;
 	}
 	if (dropdown == "patriciusok")
 	{
-		document.getElementById("3").style.backgroundColor = "green";
+		document.getElementById("3").className = "col-sm-12 pb-5 bg-success";
 	}
 	else {
-		document.getElementById("3").style.backgroundColor = "red";
+		document.getElementById("3").className = "col-sm-12 pb-5 bg-danger";
 	}
 
 	if (nev3 == "Servius Tullius"){
-		document.getElementById("4").style.backgroundColor = "green";
+		document.getElementById("4").className = "col-sm-12 pb-5 bg-success";
 	}
 	else {
-		document.getElementById("4").style.backgroundColor = "red";
+		document.getElementById("4").className = "col-sm-12 pb-5 bg-danger";
 	}
 
 	if (ev == 476) {
-		document.getElementById("5").style.backgroundColor = "green";
+		document.getElementById("5").className = "col-sm-12 pb-5 bg-success";
 	}
 	else {
-		document.getElementById("5").style.backgroundColor = "red";
+		document.getElementById("5").className = "col-sm-12 pb-5 bg-danger";
 	}
 }
