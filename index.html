@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="script.js"></script>
 	<title>Ókori Róma Kérdőív</title>
 </head>
 <body>
-	<div class="container text-center w-50">
+	<div class="container text-center w-50 text-light">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 bg-dark">
 				<h1 class="mt-5 col font-weight-bold">Ókori Róma<br><small>Kérdőív</small></h1>
 			</div>
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 bg-secondary pb-5">
 				<h3 class="mt-5 pt-3 pb-3">Kiket tartunk Róma megalapítójának?</h3>
 				<label>Alapítók nevei:</label>
 				<input type="text" name="nev1" id="nev1"> és <input type="text" name="nev2" id="nev2">
 			</div>
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 bg-dark pb-5">
 				<h3 class="mt-5 pt-3 pb-3">Hol volt Róma államalakulat?</h3>
 				<div class="row">
 					<div class="col-sm-6 pb-4 text-right">
@@ -41,7 +42,7 @@
 				</div>
 			</div>
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 bg-secondary pb-5">
 				<h3 class="mt-5 pt-3 pb-3">Kik voltak azok a bizonyos "jó apától származók"?</h3>
 				<select class="w-25 h-25" id="dropdown">
 					<option value="etruszkok">
@@ -62,15 +63,20 @@
 				</select>
 			</div>
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 bg-dark pb-5">
 				<h3 class="mt-5 pt-3 pb-3">Kinek tulajdonították a római piac alapítását?</h3>
 				<label>Uralkodó neve:</label>
 				<input type="text" name="nev3" id="nev3">
 			</div>
 
-			<div class="col-sm-12">
-				<h3 class="mt-5 pt-3 pb-3"></h3>
-				<input type="range" min="0" max="1000" step="1" id="ev"><span onkeyup="get_ev()"></span>
+			<div class="col-sm-12 bg-secondary">
+				<h3 class="mt-5 pt-3 pb-3">Mikor volt a Nyugatrómai Birodalom bukása?</h3>
+				<input type="range" min="0" max="1000" step="1" id="ev" onmousemove="get_ev()"><span class="pl-5" id="ev_v"><script type="text/javascript">document.write(document.getElementById("ev").value)</script></span>
+			</div>
+
+			<div class="col-sm-12 pt-5 pb-5 bg-dark">
+				<p>Ha végeztél nyomd meg ezt a gombot</p>
+				<input type="submit" name="ellenoriz" value="Ellenőrzés" onclick="ellenoriz()">
 			</div>
 		</div>
 	</div>
