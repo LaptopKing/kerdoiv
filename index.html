@@ -7,20 +7,70 @@
 	<title>Ókori Róma Kérdőív</title>
 </head>
 <body>
-	<div class="container text-center">
+	<div class="container text-center w-50">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="mt-5 col font-weight-bold">Ókori Róma<br><small>Kérdőív</small></h1>
 			</div>
-			
-			<div class="col-sm-12">
-				<h3 class="mt-5 pt-3 pb-3">Kiket tartunk Róma megalapítójának?</h3>
-				<p><input type="text" name="nev1" id="nev1"> és <input type="text" name="nev2" id="nev2"></p>
-			</div>
 
 			<div class="col-sm-12">
 				<h3 class="mt-5 pt-3 pb-3">Kiket tartunk Róma megalapítójának?</h3>
-				<p><input type="text" name="nev1" id="nev1"> és <input type="text" name="nev2" id="nev2"></p>
+				<label>Alapítók nevei:</label>
+				<input type="text" name="nev1" id="nev1"> és <input type="text" name="nev2" id="nev2">
+			</div>
+
+			<div class="col-sm-12">
+				<h3 class="mt-5 pt-3 pb-3">Hol volt Róma államalakulat?</h3>
+				<div class="row">
+					<div class="col-sm-6 pb-4 text-right">
+						<input type="radio" name="r1" value="gallia">
+						<label>Gallia szívében</label>
+					</div>
+					<div class="col-sm-6 pb-4 text-left">
+						<input type="radio" name="r1" value="athen">
+						<label>Athén városában</label>
+					</div>
+					<div class="col-sm-6 text-right">
+						<input type="radio" name="r1" value="foldkozi">
+						<label>Földközi-tenger medencéjében</label>
+					</div>
+					<div class="col-sm-6 text-left">
+						<input type="radio" name="r1" value="adria">
+						<label>Adriai-tenger öblében</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12">
+				<h3 class="mt-5 pt-3 pb-3">Kik voltak azok a bizonyos "jó apától származók"?</h3>
+				<select class="w-25 h-25" id="dropdown">
+					<option value="etruszkok">
+						etruszkok
+					</option>
+					<option value="senatus">
+						senatus
+					</option>
+					<option value="patriciusok">
+						patriciusok
+					</option>
+					<option value="dictator">
+						dictator
+					</option>
+					<option value="plebejusok">
+						plebejusok
+					</option>
+				</select>
+			</div>
+
+			<div class="col-sm-12">
+				<h3 class="mt-5 pt-3 pb-3">Kinek tulajdonították a római piac alapítását?</h3>
+				<label>Uralkodó neve:</label>
+				<input type="text" name="nev3" id="nev3">
+			</div>
+
+			<div class="col-sm-12">
+				<h3 class="mt-5 pt-3 pb-3"></h3>
+				<input type="range" min="0" max="1000" step="1" id="ev"><span onkeyup="get_ev()"></span>
 			</div>
 		</div>
 	</div>
